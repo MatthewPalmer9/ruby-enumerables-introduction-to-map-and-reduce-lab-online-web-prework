@@ -35,11 +35,11 @@ def map_to_square(source_array)
 end 
 
 def reduce_to_total(source_array, starting_point)
-  if starting_point = nil do
+  while starting_point = nil do
     total = source_array.sum
-  end else do
+    return total
+  end
     total = source_array.sum + starting_point
-  end 
-  return total
+    return total
 end
   
