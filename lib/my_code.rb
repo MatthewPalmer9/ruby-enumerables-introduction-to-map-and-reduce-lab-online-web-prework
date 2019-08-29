@@ -10,19 +10,11 @@ def map_to_negativize(source_array)
 end 
 
 def map_to_no_change(source_array)
-  count = source_array.length
-  while count do
-    return source_array
-  end
+  source_array.map() {|el| el}
 end
 
 def map_to_double(source_array)
-  count = 0
-  while count < source_array.length do
-    source_array[count] = source_array[count] * 2
-    count += 1 
-  end
-  return source_array
+  source_array.map() {|el| el * 2 }
 end 
 
 def map_to_square(source_array)
