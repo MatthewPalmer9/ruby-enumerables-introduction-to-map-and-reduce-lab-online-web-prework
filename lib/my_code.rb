@@ -34,8 +34,8 @@ def map_to_square(source_array)
   return source_array
 end 
 
-def reduce_to_total(source_array, starting_point)
-  while starting_point == nil || do
+def reduce_to_total(source_array, starting_point = 0)
+  while starting_point == 0 do
     total = source_array.sum
     return total
   end
